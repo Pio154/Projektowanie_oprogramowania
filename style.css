@@ -1,0 +1,92 @@
+.button
+{
+    position: absolute;
+    background-color: #1c1527;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 15px;
+    width:245px;
+    color:#FAEAFF;
+}
+
+#box
+{
+    background-color: #30263F;
+    padding-left: 10px;
+}
+
+
+
+#icon
+{
+    padding-left:25px;
+    
+}
+
+#bar
+{
+    position:absolute;
+    top:0;
+    left:260px;
+    background-color: #30263F;
+    line-height: 154px;
+    padding-left: 20px;
+    max-height:154px;
+    width: 1255px;
+    float: left;
+}
+
+p1
+{
+    font-family: Tahoma;
+    font-size: 70px;
+    font-weight: 600;
+    color:#FAEAFF;
+}
+
+.cotainer
+{
+    display: flex;
+    align-items: stretch;
+}
+
+.content
+{
+    flex:1;
+    position:absolute;
+    top:154px;
+    left:260px;
+    padding:20px;
+    width: 1235px;
+    min-height: 550px;
+    background-color: #5F536F;
+    font-family: Tahoma;
+    color:#FAEAFF;
+    font-size: 25px;
+}
+
+.menu
+{
+    flex:1;
+    position: absolute;
+    top:154px;
+    background-color: #1c1527;
+    padding-top: 20px;
+    padding-right: 15px;
+    width:250px;
+    min-height: 550px;
+    font-size:larger;
+    font-family: Tahoma ;
+    color:#FAEAFF;
+}
+
+html , body
+{
+    margin:0px;
+    background-color: #1c1527;
+}
+
+a
+{
+    color:#FAEAFF;
+}

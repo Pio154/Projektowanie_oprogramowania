@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projektowanie Oprogramowania</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="icon" href="icon.png">
+    </head>
+    <body>
+        <div class="container"></div>
+            <div id="bar">
+                <p1>Sortowanie bąbelkowe</p1>
+            </div>
+
+            <div class="button">
+            <center><a href="index.html"><img src="icon.png" id="icon"></a></center><br>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <a href="algorytmika.html"><li>Algorytmika</li></a><br>
+                    <a href="schematy_blok.html"><li>Schematy blokowe</a></li><br>
+                    <a href="prze_liniowe.html"><li>Przeszukiwanie liniowe</a></li><br>
+                    <a href="prze_binarne.html"><li>Przeszukiwanie binarne</a></li><br>
+                    <a href="sort_babelkowe.html"><li>Sortowanie bąbelkowe</a></li><br>
+                    <a href="sort_wybor.html"><li>Sortowanie przez wybór</a></li><br>
+                </ul>
+
+            </div>
+            
+            <div class="content">
+                <h2>Definicja</h2>
+                <i>Sortowanie bąbelkowe (ang. bubble sort)</i> – prosta metoda sortowania o złożoności czasowej i pamięciowej.
+                <br>
+                Polega na porównywaniu dwóch kolejnych elementów i zamianie ich kolejności, jeżeli zaburza ona porządek, w jakim się sortuje tablicę. Sortowanie kończy się, gdy podczas kolejnego przejścia nie dokonano żadnej zmiany.
+                
+                <h2>Dowód matematyczny</h2>
+                Algorytm opiera się na zasadzie maksimum, tj. każda liczba jest mniejsza lub równa od liczby maksymalnej. Porównując kolejno liczby, można wyznaczyć największą z nich. Następnie ciąg częściowo posortowany (mający liczbę maksymalną) można skrócić o tę liczbę i ponowić szukanie maksimum, już bez elementów odrzuconych i tak długo, aż zostanie nam jeden element. Otrzymane kolejne maksima są coraz mniejsze, przez co ciąg jest uporządkowany.
+    
+                <h2>Złożoność obliczeniowa</h2>
+                Algorytm wykonuje <i>n - 1</i> przejść, a w każdym przejściu wykonuje <i>n - k</i> porównań (gdzie <i>k = 1,2...n - 1</i> to numer przejścia), przez co jego teoretyczna złożoność czasowa wynosi <i>O(n<sup>2</sup>)</i> W podstawowej wersji algorytmu nie można tego czasu skrócić, a każda permutacja powoduje, że algorytm jest wykonywany w czasie pesymistycznym.
+                <h4>Modyfikacje powodujące ulepszenie czasu</h4>
+                Algorytm można rozbudować tak, by czas optymistyczny był lepszy. Najłatwiejsze jest dodanie flagi informującej, czy w danej iteracji doszło do zmiany. Flaga jest zerowana na wejściu w przebiegu pętli, w przypadku natrafienia na zmianę jest podnoszona, a po wykonaniu przejścia sprawdzana. Jeśli nie było zmian, to sortowanie jest zakończone. Modyfikacja ta wprawdzie wydłuża czas wykonania jednego przejścia przez pętlę (gdyż trzeba wyzerować flagę, podnieść ją i sprawdzić), jednakże w wariancie optymistycznym (ciąg częściowo posortowany) może zaoszczędzić iteracji, przez co algorytm będzie działać szybciej.
+    
+                <h2>Symulacja sortowania</h2>
+                <center><img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Bubble_sort_animation.gif?20140912180657"></center>
+            </div>
+        </div>
+    </body>
+</html>		

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projektowanie Oprogramowania</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="icon" href="icon.png">
+    </head>
+    <body>
+        <div class="container"></div>
+            <div id="bar">
+                <p1>Przeszukiwanie binarne</p1>
+            </div>
+
+            <div class="button">
+            <center><a href="index.html"><img src="icon.png" id="icon"></a></center><br>
+            </div>
+            
+            <div class="menu">
+                <ul>
+                    <a href="algorytmika.html"><li>Algorytmika</li></a><br>
+                    <a href="schematy_blok.html"><li>Schematy blokowe</a></li><br>
+                    <a href="prze_liniowe.html"><li>Przeszukiwanie liniowe</a></li><br>
+                    <a href="prze_binarne.html"><li>Przeszukiwanie binarne</a></li><br>
+                    <a href="sort_babelkowe.html"><li>Sortowanie bąbelkowe</a></li><br>
+                    <a href="sort_wybor.html"><li>Sortowanie przez wybór</a></li><br>
+                </ul>
+
+            </div>
+            
+            <div class="content">
+                    <h2>Definicja</h2>
+                <i>Wyszukiwanie binarne</i> – algorytm opierający się na metodzie dziel i zwyciężaj, który w czasie logarytmicznym stwierdza, czy szukany element znajduje się w uporządkowanej tablicy i jeśli się znajduje, podaje jego indeks. Np. jeśli tablica zawiera milion elementów, wyszukiwanie binarne musi sprawdzić maksymalnie 20 elementów <i>(log<sub>2</sub> 1'000'000 &#8776; 20)</i> w celu znalezienia żądanej wartości. Dla porównania wyszukiwanie liniowe wymaga w najgorszym przypadku przejrzenia wszystkich elementów tablicy.
+
+                <h2>Zasada działania algorytmu</h2>
+                Uporządkowana tablica jest dzielona na coraz mniejsze przedziały do momentu, gdy przedział osiągnie długość jeden, kiedy możemy jednym sprawdzeniem określić, czy element znajduje się w tablicy.
+                <br><br>
+                W pojedynczym kroku rozważa się jeden przedział charakteryzowany dwoma indeksami: początkowym <i>a</i> i końcowym <i>b</i>. Algorytm rozpoczyna wyszukiwanie od całej tablicy.
+                <br><br>
+                Następnie wyznaczany jest środek tego przedziału <i>c = [(a + b) / 2]</i>.
+                <br><br>
+                <i>Przedział jest zawężany</i> – dzięki uporządkowaniu danych wiadomo, że albo poszukiwany element może znajdować się w indeksach <i>[a;c]</i> albo za nim. Innymi słowy wybór ogranicza się do przedziału [a,c] gdy poszukiwany element jest mniejszy lub równy zapisanemu pod indeksem <i>c</i>, albo <i>[c + 1,b]</i> w przeciwnym razie.
+                <br>
+                <br>
+                <a href="https://youtu.be/MFhxShGxHWc" target="_blank">Film wyjaśniający temat w pigułce</a>
+                
+            </div>
+        </div>
+    </body>
+</html>		
